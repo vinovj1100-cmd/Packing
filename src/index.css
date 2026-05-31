@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    @apply h-full bg-black text-white;
+    -webkit-tap-highlight-color: transparent;
+  }
+  input, button {
+    @apply outline-none;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
